@@ -1,0 +1,22 @@
+{
+  "name": "weaviate-engram-knot",
+  "description": "Migrate off Weaviate Engram before Dec 31, 2026 and pair Weaviate corpus retrieval with Knot temporal context governance over MCP.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Knot",
+    "email": "support@connectknot.com"
+  },
+  "homepage": "https://connectknot.com/developers/quickstart",
+  "repository": "https://github.com/ConnectKnot/weaviate-engram-knot-skill",
+  "license": "MIT",
+  "keywords": [
+    "weaviate",
+    "engram",
+    "knot",
+    "migration",
+    "mcp",
+    "context-engine",
+    "supersession",
+    "enterprise-brain"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "source": "weaviate-engram-sample-export",
+  "exported_at": "2026-11-24T17:00:00Z",
+  "memories": [
+    {
+      "id": "mem_engram_001",
+      "project_id": "proj_checkout_01",
+      "group": "checkout-platform",
+      "topic": "architecture_decisions",
+      "user_id": "usr_dev_42",
+      "content": "Webhook retry policy: use 5 fixed-interval retries at 30 second intervals for OrderStream delivery failures (baseline commit a1b2c3d4e5f6).",
+      "created_at": "2026-09-10T14:20:00Z",
+      "updated_at": "2026-09-10T14:20:00Z",
+      "tags": ["webhooks", "retry-policy", "orderstream"],
+      "score": 0.94,
+      "properties": {
+        "repo": "checkout-platform",
+        "service": "orderstream-webhooks"
+      }
+    },
+    {
+      "id": "mem_engram_002",
+      "project_id": "proj_checkout_01",
+      "group": "checkout-platform",
+      "topic": "constraints",
+      "user_id": "usr_dev_42",
+      "content": "PCI boundary rule: reject raw cardholder payloads with HTTP 422 PCI_CDE_PAYLOAD_REJECTED before persistence; synthetic test card 4111-1111-1111-1111 and dummy key sk-test-fake-0000000000000000000000 must be scrubbed locally.",
+      "created_at": "2026-09-22T11:05:00Z",
+      "updated_at": "2026-09-22T11:05:00Z",
+      "tags": ["pci", "security", "write-door"],
+      "score": 0.98,
+      "properties": {
+        "repo": "checkout-platform",
+        "subject_key": "pci_cde_boundary"
+      }
+    },
+    {
+      "id": "mem_engram_003",
+      "project_id": "proj_checkout_01",
+      "group": "checkout-platform",
+      "topic": "architecture_decisions",
+      "user_id": "usr_dev_42",
+      "content": "Webhook retry policy update: replace 5 fixed-interval retries with max 3 exponential-backoff retries (2s, 8s, 30s) plus dead-letter queue routing after commit a1b2c3d4e5f6.",
+      "created_at": "2026-10-18T09:45:00Z",
+      "updated_at": "2026-10-18T09:45:00Z",
+      "tags": ["webhooks", "retry-policy", "orderstream"],
+      "score": 0.99,
+      "properties": {
+        "repo": "checkout-platform",
+        "service": "orderstream-webhooks"
+      }
+    },
+    {
+      "id": "mem_engram_004",
+      "project_id": "proj_checkout_01",
+      "group": "checkout-platform",
+      "topic": "UserKnowledge",
+      "user_id": "usr_dev_42",
+      "content": "Prefer concise TypeScript diffs with explicit unit test commands and zero external runtime dependencies.",
+      "created_at": "2026-10-25T16:10:00Z",
+      "updated_at": "2026-10-25T16:10:00Z",
+      "tags": ["style", "typescript"],
+      "score": 0.91,
+      "properties": {
+        "repo": "checkout-platform"
+      }
+    },
+    {
+      "id": "mem_engram_005",
+      "project_id": "proj_checkout_01",
+      "group": "checkout-platform",
+      "topic": "project_facts",
+      "user_id": "usr_dev_42",
+      "content": "Primary operational trace correlation uses UUIDv4 550e8400-e29b-41d4-a716-446655440000 and Aurora PostgreSQL 16 with pgvector.",
+      "created_at": "2026-11-02T08:30:00Z",
+      "updated_at": "2026-11-02T08:30:00Z",
+      "tags": ["postgres", "pgvector", "observability"],
+      "score": 0.89,
+      "properties": {
+        "repo": "checkout-platform",
+        "subject_key": "primary_storage_observability"
+      }
+    }
+  ],
+  "total": 5
+}
